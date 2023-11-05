@@ -1,0 +1,56 @@
+html {
+	display: table;
+	margin: auto;
+}
+
+@font-face {
+	font-family: 'GenshinFont';
+	src: url('SDK_SC_Web-85W.woff2') format('woff2'),
+		url('SDK_SC_Web-85W.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+	background-color: silver;
+	font-family: GenshinFont;
+}
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -50px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.footer, .page-wrap:after {
+	height: 50px;
+}
+
+button, input[type=button], input[type=submit] {
+	font-family: GenshinFont;
+}
+
+th, td {
+	border: 1px solid black;
+}
+
+.noBorder {
+	border: none;
+}
+
+.footer {
+	text-align: center;
+	background-color: purple;
+	color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}

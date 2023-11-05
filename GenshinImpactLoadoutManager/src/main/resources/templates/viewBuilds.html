@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
+<title th:text="${build.getCharacter.name}"></title>
+
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1 th:text="${build.getCharacter.name}"></h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="HOME" />
+		</form>
+
+		<form
+			th:action="@{/genshinCharacter/{id}(id = ${genshinCharacter.id})}"
+			style="display: inline;">
+			<input type="submit" value="View Character" />
+		</form>
+
+		<table th:object=${build.getCharacter}>
+
+			<tr style="display: none;">
+				<td>ID</td>
+				<td th:text="*{getId}"></td>
+			</tr>
+
+
+			<tr>
+				<td class="noBorder"><br></td>
+			</tr>
+
+		</table>
+
+		<table th:object=${build}>
+
+			<tr>
+				<th style="border-style: none; font-size: large;">BUILD</th>
+			</tr>
+			<tr>
+				<td style="visibility: hidden;"></td>
+				<th class="noBorder">Name</th>
+				<th class="noBorder">Main Type</th>
+				<th class="noBorder">Main Stat</th>
+				<th class="noBorder">Set</th>
+				<td style="visibility: hidden;"></td>
+			</tr>
+			<tr>
+				<td>Weapon:</td>
+				<td th:text="*{weapon.name}"></td>
+				<td>attack</td>
+				<td th:text="*{weapon.mainStat}"></td>
+				<td th:text="*{weapon.weaponType}"></td>
+				<td class="noBorder">
+					<form th:action="@{/editWeaponPage/{id}(id = ${build.getId})}"
+						style="display: inline">
+						<input type="submit" value="EDIT WEAPON" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Flower:</td>
+				<td th:text="*{flower.name}"></td>
+				<td th:text="*{flower.mainType}"></td>
+				<td th:text="*{flower.mainStat}"></td>
+				<td th:text="*{flower.set}"></td>
+				<td class="noBorder">
+					<form th:action="@{/editFlowerPage/{id}(id = ${build.getId})}"
+						style="display: inline">
+						<input type="submit" value="EDIT FLOWER" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Feather:</td>
+				<td th:text="*{feather.name}"></td>
+				<td th:text="*{feather.mainType}"></td>
+				<td th:text="*{feather.mainStat}"></td>
+				<td th:text="*{feather.set}"></td>
+				<td class="noBorder">
+					<form th:action="@{/editFeatherPage/{id}(id = ${build.getId})}"
+						style="display: inline">
+						<input type="submit" value="EDIT FEATHER" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Sands:</td>
+				<td th:text="*{sands.name}"></td>
+				<td th:text="*{sands.mainType}"></td>
+				<td th:text="*{sands.mainStat}"></td>
+				<td th:text="*{sands.set}"></td>
+				<td class="noBorder">
+					<form th:action="@{/editSandsPage/{id}(id = ${build.getId})}"
+						style="display: inline">
+						<input type="submit" value="EDIT SANDS" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Goblet:</td>
+				<td th:text="*{goblet.name}"></td>
+				<td th:text="*{goblet.mainType}"></td>
+				<td th:text="*{goblet.mainStat}"></td>
+				<td th:text="*{goblet.set}"></td>
+				<td class="noBorder">
+					<form th:action="@{/editGobletPage/{id}(id = ${build.getId})}"
+						style="display: inline">
+						<input type="submit" value="EDIT GOBLET" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Circlet:</td>
+				<td th:text="*{circlet.name}"></td>
+				<td th:text="*{circlet.mainType}"></td>
+				<td th:text="*{circlet.mainStat}"></td>
+				<td th:text="*{circlet.set}"></td>
+				<td class="noBorder">
+					<form th:action="@{/editCircletPage/{id}(id = ${build.getId})}"
+						style="display: inline">
+						<input type="submit" value="EDIT CIRCLET" />
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+<style>
+th, td {
+	border: none;
+}
+</style>
+<title>Create Goblet</title>
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>Create Goblet</h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="Home" />
+		</form>
+
+		<form action="viewCharacters" style="display: inline">
+			<input type="submit" value="View All Characters" />
+		</form>
+		<button onclick="window.location=document.referrer;">BACK</button>
+
+		<br> <br>
+
+		<form th:action="@{/createGobletS}" method="post"
+			th:object="${goblet}">
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" th:field="*{name}" /></td>
+				</tr>
+				<tr>
+					<td>Main Type:</td>
+					<td><input type="text" th:field="*{mainType}" /></td>
+				</tr>
+				<tr>
+					<td>Main Stat:</td>
+					<td><input type="text" th:field="*{mainStat}" /></td>
+				</tr>
+				<tr>
+					<td>Artifact Set:</td>
+					<td><input type="text" th:field="*{set}" /></td>
+				</tr>
+				<tr>
+					<td><button type="submit">Create</button></td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

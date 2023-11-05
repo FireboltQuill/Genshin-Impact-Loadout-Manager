@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
+<title>LOGIN</title>
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>LOGIN</h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="Home" />
+		</form>
+
+		<form th:action="@{/login}" method="post" th:object="${user}">
+			Username: <input type="text" th:field="*{username}" /> <br>
+			Password: <input type="password" th:field="*{password}" /> <br>
+
+			<button type="submit">LOGIN</button>
+		</form>
+
+		<form action="createUser" style="display: inline">
+			<input type="submit" value="Register" />
+		</form>
+	</div>
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

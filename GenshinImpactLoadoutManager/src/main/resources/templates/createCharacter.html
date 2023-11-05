@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
+<style>
+th, td {
+	border: none;
+}
+</style>
+<title>Create Character</title>
+
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>Create Character</h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="Home" />
+		</form>
+
+		<form action="viewCharacters" style="display: inline">
+			<input type="submit" value="View All Characters" />
+		</form>
+		<button onclick="window.location=document.referrer;">BACK</button>
+
+
+		<br> <br>
+
+		<form th:action="@{/createCharacterS}" method="post"
+			th:object="${genshinCharacter}">
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" th:field="*{name}" /></td>
+				</tr>
+				<tr>
+					<td>Element:</td>
+					<td><input type="text" th:field="*{element}" /></td>
+				</tr>
+				<tr>
+					<td>Weapon Type:</td>
+					<td><input type="text" th:field="*{weaponType}" /></td>
+				</tr>
+
+				<tr>
+					<td>Health:</td>
+					<td><input type="number" th:field="*{health}" /></td>
+				</tr>
+				<tr>
+					<td>Attack:</td>
+					<td><input type="number" th:field="*{attack}" /></td>
+				</tr>
+				<tr>
+					<td>Defense:</td>
+					<td><input type="number" th:field="*{defense}" /></td>
+				</tr>
+				<tr>
+					<td>Elemental Mastery:</td>
+					<td><input type="number" th:field="*{elementalMastery}" /></td>
+				</tr>
+
+				<tr>
+					<td>Critical Hit Rate:</td>
+					<td><input type="number" th:field="*{critRate}" /></td>
+				</tr>
+				<tr>
+					<td>Critical Hit Damage:</td>
+					<td><input type="number" th:field="*{critDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Healing Bonus:</td>
+					<td><input type="number" th:field="*{healingBonus}" /></td>
+				</tr>
+				<tr>
+					<td>Energy Recharge:</td>
+					<td><input type="number" th:field="*{energyRecharge}" /></td>
+				</tr>
+
+				<tr>
+					<td>Anemo Damage:</td>
+					<td><input type="number" th:field="*{anemoDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Cryo Damage:</td>
+					<td><input type="number" th:field="*{cryoDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Electro Damage:</td>
+					<td><input type="number" th:field="*{electroDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Geo Damage:</td>
+					<td><input type="number" th:field="*{geoDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Hydro Damage:</td>
+					<td><input type="number" th:field="*{hydroDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Pyro Damage:</td>
+					<td><input type="number" th:field="*{pyroDamage}" /></td>
+				</tr>
+				<tr>
+					<td>Physical Damage:</td>
+					<td><input type="number" th:field="*{physicalDamage}" /></td>
+				</tr>
+
+				<tr>
+					<td><button type="submit">Create</button></td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

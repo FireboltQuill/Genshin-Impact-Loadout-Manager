@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
+<style>
+th, td {
+	border: none;
+}
+</style>
+
+<title>All Characters</title>
+
+</head>
+<body>
+	<div class="page-wrap">
+		<h1>All Characters</h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="HOME" />
+		</form>
+
+		<table>
+			<div th:each="genshinCharacters : ${genshinCharacters}">
+				<tr>
+					<td th:text="${genshinCharacters.name}"></td>
+					<td>
+						<form
+							th:action="@{/genshinCharacter/{id}(id = ${genshinCharacters.id})}">
+							<input type="submit" value="View" />
+						</form>
+					</td>
+
+				</tr>
+			</div>
+		</table>
+	</div>
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

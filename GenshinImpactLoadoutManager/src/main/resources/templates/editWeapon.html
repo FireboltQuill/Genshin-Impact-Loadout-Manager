@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+
+<title>Edit Weapon</title>
+
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>EDIT WEAPON</h1>
+		<button onclick="window.location=document.referrer;">BACK</button>
+
+		<table>
+			<tr>
+				<th class="noBorder">Weapon Name</th>
+				<th class="noBorder">Weapon Type</th>
+				<th class="noBorder">Weapon Main Stat</th>
+				<th style="visibility: hidden;"></th>
+			</tr>
+			<div th:each="weapons : ${weapons}">
+				<tr>
+					<td th:text="${weapons.name}"></td>
+					<td th:text="${weapons.weaponType}"></td>
+					<td th:text="${weapons.mainStat}"></td>
+
+					<td class="noBorder">
+						<form
+							th:action="@{/editBuildWeapon/{id}/{id2}(id = ${weapons.id},id2=${build.id})}"
+							method="post">
+							<button type="submit">Choose!</button>
+						</form>
+					</td>
+				</tr>
+			</div>
+		</table>
+	</div>
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

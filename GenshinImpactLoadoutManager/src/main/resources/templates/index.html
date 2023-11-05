@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{css/main.css}" rel="stylesheet" />
+<title>Home</title>
+
+<style>
+html {
+	display: table;
+	margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+}
+</style>
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>Genshin Impact Loadout Manager</h1>
+		<h2>Home Page</h2>
+
+
+		<form action="viewCharacters" style="display: inline">
+			<input type="submit" value="View All Characters" />
+		</form>
+
+		<br> <br>
+
+		<form action="createPage">
+			<input type="submit" value="Control Panel" />
+		</form>
+
+		<br>
+
+		<form action="login" style="display: inline">
+			<input type="submit" value="Login" />
+		</form>
+
+		<form action="logout" style="display: inline">
+			<input type="submit" value="Logout" />
+		</form>
+		<br> <br>
+	</div>
+
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+
+</body>
+</html>

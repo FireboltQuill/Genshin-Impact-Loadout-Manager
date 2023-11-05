@@ -1,0 +1,74 @@
+-- INSERT INTO CHARACTERS (id, name, element, weapon_type, health, attack, defense, elemental_mastery, crit_rate, crit_damage, healing_bonus, energy_recharge, anemo_damage, cryo_damage, electro_damage, geo_damage, hydro_damage, pyro_damage, physical_damage) VALUES (-1, 'Traveller', 'adaptive', 'sword', 10875, 262.88, 683, 0, 5, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+--INSERT INTO CHARACTERS (id, name, element, weapon_type, health, attack, defense, elemental_mastery, crit_rate, crit_damage, healing_bonus, energy_recharge, anemo_damage, cryo_damage, electro_damage, geo_damage, hydro_damage, pyro_damage, physical_damage) VALUES (-2, 'Amber', 'pyro', 'bow', 9461, 276.52, 601, 0, 5, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+--INSERT INTO CHARACTERS (id, name, element, weapon_type, health, attack, defense, elemental_mastery, crit_rate, crit_damage, healing_bonus, energy_recharge, anemo_damage, cryo_damage, electro_damage, geo_damage, hydro_damage, pyro_damage, physical_damage) VALUES (-3, 'Barbara', 'hydro', 'catalyst', 12135.88, 159, 669, 0, 5, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+--INSERT INTO CHARACTERS (id, name, element, weapon_type, health, attack, defense, elemental_mastery, crit_rate, crit_damage, healing_bonus, energy_recharge, anemo_damage, cryo_damage, electro_damage, geo_damage, hydro_damage, pyro_damage, physical_damage) VALUES (-4, 'Beidou', 'electro', 'claymore', 13050, 225, 648, 0, 5, 50, 0, 0, 0, 0, 24, 0, 0, 0, 0);
+--INSERT INTO CHARACTERS (id, name, element, weapon_type, health, attack, defense, elemental_mastery, crit_rate, crit_damage, healing_bonus, energy_recharge, anemo_damage, cryo_damage, electro_damage, geo_damage, hydro_damage, pyro_damage, physical_damage) VALUES (-5, 'Bennett', 'pyro', 'sword', 12397, 191, 771, 0, 5, 50, 0, 26.7, 0, 0, 0, 0, 0, 0, 0);
+--
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-1, 'EMPTY', 'WEAPON', 0);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-2, 'Primordial Jade Cutter', 'sword', 542);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-3, 'Aquila Favonia', 'sword', 674);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-4, 'Elegy of the End', 'bow', 608);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-5, 'Everlasting Moonglow', 'catalyst', 608);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-6, 'Wolfs Gravestone', 'claymore', 608);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-7, 'Thundering Pulse', 'bow', 608);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-8, 'Skyward Atlas', 'catalyst', 674);
+--INSERT INTO WEAPONS (id, name, weapon_type, main_stat) VALUES (-9, 'Song of Broken Pines', 'claymore', 741);
+--
+--INSERT INTO USERS (id, username, password, role) VALUES (-1, 'FireboltQuill', 'd4df650600bdfc30eaccc1b148c84cb9a681928c046f540d3e945e359f4ce05f', 'admin'); -- fquill
+--INSERT INTO USERS (id, username, password, role) VALUES (-2, 'Akimei', '7717a57ec3d7fb939eff71741ceca0a01808b7b6ea01edb40b9b7facf5a061cf', 'user'); -- mei
+--INSERT INTO USERS (id, username, password, role) VALUES (-3, 'Izayumi', '83e68a4148bcf382fcfad664b2a717993d6d8c97ebab11b8b34d2ccbe6ba754c', 'user'); -- yumi
+--
+--INSERT INTO ARTIFACT_FLOWER (id, name, main_type, main_stat, artifact_set) VALUES (-1, 'EMPTY', 'EMPTY', 0, 'EMPTY');
+--INSERT INTO ARTIFACT_FLOWER (id, name, main_type, main_stat, artifact_set) VALUES (-2, 'Witchs Flower of Blaze', 'health', 4780, 'Crimson Witch of Flames');
+--INSERT INTO ARTIFACT_FLOWER (id, name, main_type, main_stat, artifact_set) VALUES (-3, 'Royal Flora', 'health', 4780, 'Noblesse Oblige');
+--INSERT INTO ARTIFACT_FLOWER (id, name, main_type, main_stat, artifact_set) VALUES (-4, 'Thunderbirds Mercy', 'health', 4780, 'Thundering Fury');
+--INSERT INTO ARTIFACT_FLOWER (id, name, main_type, main_stat, artifact_set) VALUES (-5, 'Maidens Distant Love', 'health', 4780, 'Maiden Beloved');
+--INSERT INTO ARTIFACT_FLOWER (id, name, main_type, main_stat, artifact_set) VALUES (-6, 'Gladiators Nostalgia', 'health', 4780, 'Gladiators Finale');
+--
+--INSERT INTO ARTIFACT_FEATHER(id, name, main_type, main_stat, artifact_set) VALUES (-1, 'EMPTY', 'EMPTY', 0, 'EMPTY');
+--INSERT INTO ARTIFACT_FEATHER(id, name, main_type, main_stat, artifact_set) VALUES (-2, 'Witchs Ever-Burning Plume', 'attack', 311, 'Crimson Witch of Flames');
+--INSERT INTO ARTIFACT_FEATHER(id, name, main_type, main_stat, artifact_set) VALUES (-3, 'Royal Plume', 'attack', 311, 'Noblesse Oblige');
+--INSERT INTO ARTIFACT_FEATHER(id, name, main_type, main_stat, artifact_set) VALUES (-4, 'Survivor of Catastrophe', 'attack', 311, 'Thundering Fury');
+--INSERT INTO ARTIFACT_FEATHER(id, name, main_type, main_stat, artifact_set) VALUES (-5, 'Maidens Heart-Stricken Infatuation', 'attack', 311, 'Maiden Beloved');
+--INSERT INTO ARTIFACT_FEATHER(id, name, main_type, main_stat, artifact_set) VALUES (-6, 'Gladiators Destiny', 'attack', 311, 'Gladiators Finale');
+--
+--  INSERT INTO ARTIFACT_SANDS(id, name, main_type, main_stat, artifact_set) VALUES (-1, 'EMPTY', 'EMPTY', 0, 'EMPTY');
+--  INSERT INTO ARTIFACT_SANDS(id, name, main_type, main_stat, artifact_set) VALUES (-2, 'Witchs End Time', 'attackP', 46.6, 'Crimson Witch of Flames');
+--  INSERT INTO ARTIFACT_SANDS(id, name, main_type, main_stat, artifact_set) VALUES (-3, 'Royal Pocket Watch', 'energy_recharge', 51.8, 'Noblesse Oblige');
+--  INSERT INTO ARTIFACT_SANDS(id, name, main_type, main_stat, artifact_set) VALUES (-4, 'Hourglass of Thunder', 'attackP', 46.6, 'Thundering Fury');
+--  INSERT INTO ARTIFACT_SANDS(id, name, main_type, main_stat, artifact_set) VALUES (-5, 'Maidens Passing Youth', 'hpP', 46.6, 'Maiden Beloved');
+--  INSERT INTO ARTIFACT_SANDS(id, name, main_type, main_stat, artifact_set) VALUES (-6, 'Gladiators Longing', 'attackP', 46.6, 'Gladiators Finale');
+--
+-- INSERT INTO ARTIFACT_GOBLET(id, name, main_type, main_stat, artifact_set) VALUES (-1, 'EMPTY', 'EMPTY', 0, 'EMPTY');
+-- INSERT INTO ARTIFACT_GOBLET(id, name, main_type, main_stat, artifact_set) VALUES (-2, 'Witchs Heart Flames', 'pyro_damage', 46.6, 'Crimson Witch of Flames');
+-- INSERT INTO ARTIFACT_GOBLET(id, name, main_type, main_stat, artifact_set) VALUES (-3, 'Royal Silver Urn', 'pyro_damage', 46.6, 'Noblesse Oblige');
+-- INSERT INTO ARTIFACT_GOBLET(id, name, main_type, main_stat, artifact_set) VALUES (-4, 'Omen of Thunderstorm', 'electro_damage', 46.6, 'Thundering Fury');
+-- INSERT INTO ARTIFACT_GOBLET(id, name, main_type, main_stat, artifact_set) VALUES (-5, 'Maidens Fleeting Leisure', 'hpP', 46.6, 'Maiden Beloved');
+-- INSERT INTO ARTIFACT_GOBLET(id, name, main_type, main_stat, artifact_set) VALUES (-6, 'Gladiators Intoxication', 'physical_damage', 58.3, 'Gladiators Finale');
+--
+--INSERT INTO ARTIFACT_CIRCLET(id, name, main_type, main_stat, artifact_set) VALUES (-1, 'EMPTY', 'EMPTY', 0, 'EMPTY');
+--INSERT INTO ARTIFACT_CIRCLET(id, name, main_type, main_stat, artifact_set) VALUES (-2, 'Witchs Scorching Hat', 'crit_damage', 62.2, 'Crimson Witch of Flames');
+--INSERT INTO ARTIFACT_CIRCLET(id, name, main_type, main_stat, artifact_set) VALUES (-3, 'Royal Masque', 'healing_bonus', 35.9, 'Noblesse Oblige');
+--INSERT INTO ARTIFACT_CIRCLET(id, name, main_type, main_stat, artifact_set) VALUES (-4, 'Thunder Summoners Crown', 'crit_damage', 62.2, 'Thundering Fury');
+--INSERT INTO ARTIFACT_CIRCLET(id, name, main_type, main_stat, artifact_set) VALUES (-5, 'Maidens Fading Beauty', 'healing_bonus', 35.9, 'Maiden Beloved');
+--INSERT INTO ARTIFACT_CIRCLET(id, name, main_type, main_stat, artifact_set) VALUES (-6, 'Gladiators Triumphus', 'crit_damage', 62.2, 'Gladiators Finale');
+--
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-1, -1, -1, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-2, -1, -2, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-3, -1, -3, -1, -1, -1, -1, -1, -1);
+--
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-4, -2, -1, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-5, -2, -2, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-6, -2, -3, -1, -1, -1, -1, -1, -1);
+--
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-7, -3, -1, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-8, -3, -2, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-9, -3, -3, -1, -1, -1, -1, -1, -1);
+--
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-10, -4, -1, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-11, -4, -2, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-12, -4, -3, -1, -1, -1, -1, -1, -1);
+--
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-13, -5, -1, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-14, -5, -2, -1, -1, -1, -1, -1, -1);
+--INSERT INTO CHARACTER_BUILDS(id, character_id, users_id, artifact_flower_id, artifact_feather_id, artifact_sands_id, artifact_goblet_id, artifact_circlet_id, weapon_id) VALUES (-15, -5, -3, -1, -1, -1, -1, -1, -1);

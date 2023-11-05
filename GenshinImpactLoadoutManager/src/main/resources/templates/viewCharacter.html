@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+<title th:text="${genshinCharacter.name}"></title>
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1 th:text="${genshinCharacter.name}"></h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="HOME" />
+		</form>
+
+		<form action="/GenshinImpact/viewCharacters" style="display: inline">
+			<input type="submit" value="VIEW CHARACTERS" />
+		</form>
+
+		<table th:object=${genshinCharacter}>
+			<tr>
+				<td style="border-style: none;">
+					<form th:action="@{/viewBuild/{id}(id = ${genshinCharacter.id})}">
+						<input type="submit" value="Edit Build" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border-style: none;"><br></td>
+			</tr>
+
+			<tr>
+				<td style="border-style: none;">BASE STATS</td>
+			</tr>
+
+			<tr>
+				<td>Element</td>
+				<td th:text="*{element}"></td>
+			</tr>
+
+			<tr>
+				<td>Weapon Type</td>
+				<td th:text="*{weaponType}"></td>
+			</tr>
+
+			<tr>
+				<td>Health</td>
+				<td th:text="${healthStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Attack</td>
+				<td th:text="${attackStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Defense</td>
+				<td th:text="${defenseStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Elemental Mastery</td>
+				<td th:text="${emStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Critical Hit Rate</td>
+				<td th:text="${critRateStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Critical Hit Damage</td>
+				<td th:text="${critDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Healing Bonus</td>
+				<td th:text="${healingBonusStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Energy Recharge rate</td>
+				<td th:text="${erStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Anemo Damage</td>
+				<td th:text="${anemoDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Cryo Damage</td>
+				<td th:text="${cryoDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Electro Damage</td>
+				<td th:text="${electroDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Geo Damage</td>
+				<td th:text="${geoDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Hydro Damage</td>
+				<td th:text="${hydroDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Pyro Damage</td>
+				<td th:text="${pyroDamageStat}"></td>
+			</tr>
+
+			<tr>
+				<td>Physical Damage</td>
+				<td th:text="${physicalDamageStat}"></td>
+			</tr>
+		</table>
+		<br>
+
+	</div>
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

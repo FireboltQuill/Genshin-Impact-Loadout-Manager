@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+<style>
+th, td {
+	border: none;
+}
+</style>
+<title>Register</title>
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>Register</h1>
+
+		<form action="/GenshinImpact" style="display: inline">
+			<input type="submit" value="Home" />
+		</form>
+		<button onclick="window.location=document.referrer;">BACK</button>
+
+		<br> <br>
+
+		<form th:action="@{/createUserS}" method="post" th:object="${user}">
+			<table>
+				<tr>
+					<td>Username:</td>
+					<td><input type="text" th:field="*{username}" /></td>
+				</tr>
+
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" th:field="*{password}" /></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" th:field="*{role}" readonly
+						style="display: none;" /></td>
+				</tr>
+
+				<tr>
+					<td>
+						<button type="submit">Register</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+	</div>
+
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>

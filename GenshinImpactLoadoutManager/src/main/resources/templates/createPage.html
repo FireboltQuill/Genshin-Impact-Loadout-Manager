@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link th:href="@{/css/main.css}" rel="stylesheet" />
+<style>
+th, td {
+	border: none;
+}
+</style>
+<title>Create Page</title>
+<style>
+th, td {
+	border: 1px solid black;
+	text-align: center;
+	margin: auto;
+}
+</style>
+</head>
+<body>
+	<div class="page-wrap">
+
+		<h1>CONTROL PANEL</h1>
+
+		<form action="/GenshinImpact" style="display: inline;">
+			<input type="submit" value="HOME" />
+		</form>
+
+		<form action="viewCharacters" style="display: inline;">
+			<input type="submit" value="View All Characters" />
+		</form>
+
+		<table>
+			<tr>
+				<th>Create</th>
+				<th>Delete</th>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="createCharacter">
+						<input type="submit" value="Create Character" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteCharacter">
+						<input type="submit" value="Delete Character" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="createUser">
+						<input type="submit" value="Create User" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteUser">
+						<input type="submit" value="Delete User" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="createWeapon">
+						<input type="submit" value="Create Weapon" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteWeapon">
+						<input type="submit" value="Delete Weapon" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="createFlower">
+						<input type="submit" value="Create Flower" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteFlower">
+						<input type="submit" value="Delete Flower" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="createFeather">
+						<input type="submit" value="Create Feather" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteFeather">
+						<input type="submit" value="Delete Feather" />
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="createSands">
+						<input type="submit" value="Create Sands" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteSands">
+						<input type="submit" value="Delete Sands" />
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form action="createGoblet">
+						<input type="submit" value="Create Goblet" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteGoblet">
+						<input type="submit" value="Delete Goblet" />
+					</form>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<form action="createCirclet">
+						<input type="submit" value="Create Circlet" />
+					</form>
+				</td>
+				<td>
+					<form action="deleteCirclet">
+						<input type="submit" value="Delete Circlet" />
+					</form>
+				</td>
+			</tr>
+
+		</table>
+	</div>
+	<footer class="footer">
+		<p>By: Dylan Wang, 2022</p>
+	</footer>
+</body>
+</html>
